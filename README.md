@@ -1,7 +1,8 @@
 # 🎤 SlideVo – AI Self-Presenting Slides
 
-Spiko is a web application that transforms text into **self-presenting slide decks** with **AI narration**, **automatic slide transitions**, **interactive playback controls** and **Video Export thorugh Screen recording**.
-Users can simply open the app, add content, and watch the presentation run on its own.
+SlideVo is a web application that transforms PowerPoint presentations into **self-presenting slide decks** with **AI-generated narration**, **automatic slide transitions**, **interactive playback controls**, and **video export through screen recording**.
+
+Users can simply upload a PPT file, generate narration, and watch the presentation run automatically—just like a virtual presenter.
 
 🌐 **Live Demo (Public)**  
 👉 https://spiko-presenter.netlify.app
@@ -10,11 +11,12 @@ Users can simply open the app, add content, and watch the presentation run on it
 
 ## ✨ What You Can Do
 
-- 🧠 Convert text into presentation slides
+- 🧠 Upload PowerPoint (PPT) files for presentation
 - 🔊 Generate AI narration for each slide
-- ▶️ Auto-play narration with slide advancement
-- ⏸️ Play, pause, next, and previous controls
-- 🖥️ Clean slide rendering using Reveal.js
+- ▶️ Auto-play narration with automatic slide advancement
+- ⏸️ Play, pause, next, and previous slide controls
+- 🖥️ High-fidelity slide rendering using **OnlyOffice VM**
+- 🎥 Record the presentation with system audio
 - ⚡ No installation required – works directly in the browser
 
 ---
@@ -22,17 +24,19 @@ Users can simply open the app, add content, and watch the presentation run on it
 ## 🧑‍💻 How to Use (Public App)
 
 1. Open the live Netlify link
-2. Add your PPT file through **Choose file**
-3. Click check box **Enhance narration using AI** to generate narration through **OpenAI**
-4. Click **⚡Generate narration for all slides** and wait for completion of generation process
-5. Click check box **Auto play narration on slide change** to auto slide changing feature similar to PowerPoint
-6. Click **Record** and share the SlideVo window with **Also share system sound** checkbox ON. This will turn on recording.
-7. Click **Play** to start the narration
-8. Slides start presenting automatically with narration
-9. Click **Fullscreen** to make the presentation full screen
+2. Upload your PPT file using **Choose File**
+3. Enable **Enhance narration using AI** to generate narration via OpenAI
+4. Click **⚡ Generate narration for all slides** and wait for completion
+5. Enable **Auto play narration on slide change** for PowerPoint-like auto transitions
+6. Click **Record**
+   - Share the SlideVo window
+   - Enable **Also share system sound**
+7. Click **Play** to start narration
+8. Slides will automatically present with narration
+9. Click **Fullscreen** for an immersive presentation view
 10. Use **Pause / Next / Previous** anytime to control playback
 
-> 💡 Best experience on desktop browsers (Chrome recommended)
+> 💡 Best experience on desktop browsers (Google Chrome recommended)
 
 ---
 
@@ -42,28 +46,30 @@ Users can simply open the app, add content, and watch the presentation run on it
 |-------|---------|
 | ▶️ Play | Starts narration |
 | ⏸️ Pause | Stops narration and enables manual navigation |
-| ⏭️ Next | Go to next slide |
-| ⏮️ Previous | Go to previous slide |
+| ⏭️ Next | Move to next slide |
+| ⏮️ Previous | Move to previous slide |
 | 🔁 AutoPlay | Automatically advances slides after narration |
-| ⏮️ Recor | Record the presentation |
+| 🎥 Record | Records the presentation with audio |
 
 ---
 
 ## 🔊 Audio & Browser Permissions
 
-- Audio playback requires **user interaction** (browser policy)
-- Make sure sound is **enabled**
-- If narration doesn’t play:
+- Audio playback requires **user interaction** due to browser policies
+- Ensure **system sound is enabled**
+- If narration does not play:
   - Click anywhere on the page once
-  - Check browser sound permissions
+  - Check browser audio permissions
+  - Confirm system sound sharing during recording
 
 ---
 
 ## 🛠️ Tech Overview
 
 - **Frontend:** React + TypeScript
-- **Slides Engine:** Reveal.js
-- **Narration:** Browser Text-to-Speech
+- **Slides Engine:** OnlyOffice VM (PPT rendering)
+- **AI Narration:** OpenAI + Browser Text-to-Speech
+- **Recording:** Browser Screen Recording API
 - **Deployment:** Netlify
 
 ---
@@ -78,24 +84,25 @@ Users can simply open the app, add content, and watch the presentation run on it
 
 ## 🚧 Current Limitations
 
-- Mobile support is limited
-- Video export is not available yet
-- Internet connection required for AI features
+- Mobile browser support is limited
+- Direct video export is not available (screen recording required)
+- Internet connection required for AI narration features
 
 ---
 
 ## 🛣️ Planned Enhancements
 
-- ✨ AI-enhanced presentation text
-- 🎯 Highlight active slide regions while presenting
+- ✨ Advanced AI-enhanced presentation text
+- 🎯 Highlight active slide regions during narration
 - 📤 Shareable presentation links
+- 🎥 Direct MP4 video export
 
 ---
 
 ## 🤝 Feedback & Contributions
 
-Feedback is welcome!  
-If you find bugs or have feature ideas, feel free to open an issue or pull request.
+Feedback and contributions are welcome!  
+If you find bugs or have feature ideas, feel free to open an issue or submit a pull request.
 
 ---
 
